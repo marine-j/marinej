@@ -1,0 +1,16 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.jumbotron-green {
+  background-color: #75CA7D;
+}
+.jumbotron-yellow {
+  background-color: #ffe39f;
+}
+.jumbotron-blue {
+  background-color: #1ba1e2;
+}

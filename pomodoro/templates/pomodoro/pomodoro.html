@@ -1,0 +1,66 @@
+<!-- Navbar with home page & about this website -->
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Pomodoro{% endblock %}
+
+<!-- Pomodoro -->
+
+<!-- 25 minutes clock -->
+<!-- start button -->
+
+{% block content %}
+  <div class="starter-template">
+    <h1>Increase your productivity and beat procrastination !</h1>
+  </div>
+
+<div class="jumbotron jumbotron-green">
+	<div class="row">
+		<div class="media">
+			<div class="media-left media-middle">
+				<img src="{% static 'pomodoro/tomato.jpg' %}" alt="Information" height="150" width="150" class="media-object">
+			</div>
+			<div class="media-body">
+				<p>The pomodoro technique is a great technique to help you work better. The simple idea is to set a timer (usually for 25 minutes but you can adapt) and to completly focus on your work during this time : no web surfing, no emails, no games etc...</p>
+				<p>This helps you with procrastination because it makes you feel that 25 minutes of work is totally doable :)</p>
+				<p>
+					<a class="btn btn-default" href="http://en.wikipedia.org/wiki/Pomodoro_Technique" role="button">See wikipedia article &raquo;</a>
+					<a class="btn btn-default" href="http://www.mindtools.com/pages/article/pomodoro-technique.htm" role="button">See MindTools article &raquo;</a>
+				</p>
+			</div>
+		</div><!-- media -->
+	</div> <!-- row -->
+</div>
+
+<div class="jumbotron jumbotron-yellow">
+	<div class="row">
+		<div class="media">
+			<div class="media-body">
+				<p>Congratulations ! You just finished a pomodoro !!!</p>
+				<p>It is important to reward yourself and take a break now, this will help you link good feelings to the work you just done and will make you a little bit more enclined to work again next time. Breaks are also an important part of the memorization process.</p>
+				<p><a class="btn btn-default" href="https://www.quora.com/What-are-some-brain-hacks-that-a-neuroscientist-or-a-psychologist-knows-that-most-people-dont" role="button">See Quora article on the importance of breaks &raquo;</a></p>
+			</div>
+			<div class="media-right media-middle">
+				<img src="{% static 'pomodoro/break.jpg' %}" alt="Information" height="150" width="150" class="media-object">
+			</div>
+		</div><!-- media -->
+	</div> <!-- row -->
+</div>
+
+<div class="jumbotron jumbotron-blue">
+	<div class="row">
+		<div class="media">
+			<div class="media-left media-middle">
+				<img src="{% static 'pomodoro/brain.jpg' %}" alt="Information" height="150" width="150" class="media-object">
+			</div>
+			<div class="media-body">
+				<p>Before you start a new pomodoro, you should take the time to recall what you just learned during your previous pomodoro. When recalling, you should not be reading your materials (books, website...), only remembering the main ideas and the key concepts.</p>
+				<p>Recall makes the learning process much much more effective than simply re-reading your material.</p>
+				<p>
+					<a class="btn btn-default" href="http://en.wikipedia.org/wiki/Testing_effect" role="button">See wikipedia article &raquo;</a>
+					<a class="btn btn-default" href="http://www.digitalpromise.org/blog/entry/ask-the-cognitive-scientist-retrieval-practice" role="button">See DigitalPromise article &raquo;</a>
+				</p>
+			</div>
+		</div><!-- media -->
+	</div> <!-- row -->
+</div>
+{% endblock %}
